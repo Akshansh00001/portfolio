@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akshansh Kumar | AI/ML Developer</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg,#0f172a,#020617);
+      color: white;
+    }
+
+    nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 40px;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+    }
+
+    nav h2 { color: #38bdf8; }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    nav a { color: white; text-decoration: none; }
+    nav a:hover { color: #38bdf8; }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 3px solid #38bdf8;
+      box-shadow: 0 0 20px rgba(56,189,248,0.5);
+    }
+
+    .hero h1 { font-size: 3rem; }
+    .hero span { color: #38bdf8; }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #38bdf8;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover { transform: scale(1.1); }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #38bdf8;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .skills span {
+      background: #1e293b;
+      padding: 10px 15px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    .skills span:hover {
+      background: #38bdf8;
+      color: black;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      transition: 0.4s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(56,189,248,0.3);
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #38bdf8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #94a3b8;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h2>Akshansh Kumar</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <img src="Akshansh.jpg" alt="Akshansh" class="profile-img">
+  <h1>welcome, I'm <span>Akshansh</span></h1>
+  <p>AI/ML Developer | Python | Data Science</p>
+  <p>Fresher passionate about buliding AI/ML learning new technologies, and creating innovative solutions</p>
+
+  <button class="btn" onclick="scrollToSection('projects')">View Projects</button>
+  <button class="btn" onclick="scrollToSection('contact')">View Contact</button>
+</div>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p style="text-align:center; color:#94a3b8;">
+    I am a fresher AI/ML developer with hands-on experience in machine learning, data analysis, and building dashboards. I focus on solving real-world problems using data-driven solutions and continuously improving my skills.
+  </p>
+</section>
+
+<section id="education">
+  <h2>🎓 Education</h2>  
+<h2>Strong foundation for success.</h2>
+  <div style="text-align:center; color:#94a3b8;">
+    <p><strong>Bachelor of Computer Applications (BCA)</strong></p>
+    
+    <p>2023 - 2026</p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+     <p>Skilled in Python and data analysis using Pandas, NumPy, Matplotlib, and Seaborn.
+Experienced in building machine learning models using Scikit-learn for prediction and analysis.
+Able to develop interactive dashboards using Streamlit and manage databases with MySQL.</p>
+    <span>Python</span>
+    <span>Pandas</span>
+    <span>NumPy</span>
+    <span>Matplotlib</span>
+    <span>Seaborn</span>
+    <span>Machine Learning</span>
+    <span>Deep Learning</span>
+    <span>Scikit-learn</span>
+    <span>MySQL</span>
+    <span>Streamlit</span>
+    
+    
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+
+    <div class="card">
+      <h3>Crypto Price Prediction</h3>
+      <p>Developed ML models using historical crypto data and compared performance of multiple algorithms.</p>
+      
+      <a href="https://github.com/Akshansh00001/crypto-project" target="_blank">GitHub</a>
+
+    </div>
+
+    <div class="card">
+      <h3>Trading Dashboard</h3>
+      <p>Built an interactive dashboard using Streamlit for analyzing trading data and trends.</p>
+      
+      <a href="https://bitcoin-price-predictor-akshansh.streamlit.app/" target="_blank">Live Demo</a>
+
+    </div>
+
+    <div class="card">
+      <h3>Data Analysis Project</h3>
+      <p>Performed data cleaning, visualization, and extracted key insights from dataset.</p>
+      
+      <a href="https://bitcoin-price-predictor-akshansh.streamlit.app/" target="_blank">Live Demo</a>
+
+    </div>
+
+    <div class="card">
+      <h3>Laptop-price-predictor</h3>
+      <p>Built a machine learning model to estimate laptop prices using regression techniques in Python and Scikit-learn.</p>
+      
+      <a href="https://github.com/Akshansh00001/LAPTOP-PRICE-PREDICTOR" target="_blank">GitHub</a>
+
+    </div>
+
+    <div class="card">
+      <h3> Dashboard</h3>
+      <p>Built an interactive dashboard using Streamlit for analyzing trading data and trends.</p>
+      
+      <a href="https://laptop-price-predictor-by-akshansh.streamlit.app/" target="_blank">Live Demo</a>
+
+    </div>
+
+    <div class="card">
+      <h3>Data Analysis Project</h3>
+      <p>Performed data cleaning, visualization, and extracted key insights from dataset.</p>
+      
+      <a href="https://laptop-price-predictor-by-akshansh.streamlit.app/" target="_blank">Live Demo</a>
+      
+    </div>
+
+
+    <div class="card">
+      <h3>Vechile-price-predictor </h3>
+      <p>A Vehicle Price Predictor is a machine learning application that estimates the market price of a vehicle based on features like model, year, and kilometers driven. 🚗</p>
+      <a href="https://github.com/Akshansh00001/Vechile-price-predictor" target="_blank">GitHub</a>
+
+    </div>
+
+    <div class="card">
+      <h3> Dashboard</h3>
+      <p>Built an interactive dashboard using Streamlit for analyzing trading data and trends.</p>
+      
+      <a href="https://vechile-price-predictor-by-akshansh.streamlit.app/" target="_blank">Live Demo</a>
+
+    </div>
+
+    <div class="card">
+      <h3>Data Analysis Project</h3>
+      <p>Performed data cleaning, visualization, and extracted key insights from dataset.</p>
+      
+      <a href="https://vechile-price-predictor-by-akshansh.streamlit.app/" target="_blank">Live Demo</a>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <h2>Reach out for collaborationsn or Job</h2>
+  <p>Email: Akshanshkumar551@gmail.com</p>
+  <p>Phone: +91-9990544368</p>
+</section>
+
+<footer>
+  <p> "🧑🏻‍💻" Made by Akshansh kumar|2026 </p>
+</footer>
+
+<script>
+function scrollToSection(id) {
+  document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
